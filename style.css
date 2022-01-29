@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #131c27;
+}
+.head {
+  min-height: 12vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: start;
+  padding: 2rem;
+}
+.logo {
+  flex: 1 1 40rem;
+  color: white;
+  font-size: 2.3rem;
+  font-family: cursive, sans-serif;
+  text-align: start;
+}
+.links {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+/* ---------------------------- Home ----------------------------------- */
+#home {
+  min-height: 88vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(landing-page.jpg);
+  background-size: cover;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  color: white;
+  font-family: -webkit-pictograph;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 5.2rem;
+  font-weight: 800;
+}
+#home h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.booknow {
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: #4c6e97;
+  padding: 1.8rem 6rem;
+  transition: ease all 0.5s;
+}
+.booknow:hover {
+  cursor: pointer;
+  background-color: #2a4c75;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* --------------------------------- Locations ------------------------------ */
+#Locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(new-york-page.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  width: 90%;
+  margin: auto;
+}
+.text h1 {
+  font-size: 5.2rem;
+  font-family: -webkit-pictograph;
+  text-decoration: underline;
+  margin: 2rem 0;
+}
+.text h2 {
+  margin: 5rem 0;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: -webkit-pictograph;
+}
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+#Locations img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: cloudAnimation infinite 3s ease-in-out alternate;
+}
+
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------------- Benifits ----------------------------- */
+#Benifits {
+  min-height: 110vh;
+  color: white;
+  text-align: center;
+}
+#Benifits .title-container {
+  background-color: #343c44;
+}
+#Benifits .title {
+  min-height: 35vh;
+
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#Benifits h1 {
+  font-size: 4.5rem;
+  font-family: -webkit-pictograph;
+}
+#Benifits h2 {
+  font-size: 2.9rem;
+  font-family: -webkit-pictograph;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.cards-container {
+  width: 90%;
+  margin: auto;
+}
+.cards {
+  min-height: 65vh;
+
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cardTravel,
+.cardHotel,
+.cardFly {
+  flex: 1 1 25rem;
+  margin: 2rem 5rem;
+
+  /* margin: 0 3rem; */
+  color: black;
+  box-shadow: 0px 8px 11px 0px rgb(185 180 180);
+}
+.cards .infos {
+  padding: 1rem 2rem;
+}
+.infos h3 {
+  font-size: 3rem;
+  font-family: -webkit-pictograph;
+  padding: 0 0 1rem 0;
+}
+.infos p {
+  font-size: 2rem;
+  font-family: -webkit-pictograph;
+  padding: 0 0 2rem 0;
+}
+.cardTravel img,
+.cardHotel img,
+.cardFly img {
+  background: rgba(19, 28, 39, 0.85);
+  width: 100%;
+  height: 8rem;
+  padding: 2rem 0;
+}
+/* -------------------------------------------------------------------------- */
+
+/* ----------------------------------Contact---------------------------------- */
+#Contact {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url(contact-mountain.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#Contact .box {
+  width: 60%;
+  margin: auto;
+  background-color: rgba(19, 28, 39, 0.85);
+
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box h1 {
+  width: 100%;
+  padding: 3rem;
+  font-family: -webkit-pictograph;
+  font-size: 5rem;
+  color: white;
+}
+
+.name,
+.email {
+  width: 100%;
+  padding: 3rem;
+  color: white;
+}
+.name label,
+.email label {
+  margin-right: 2rem;
+  font-size: 2rem;
+  font-family: -webkit-pictograph;
+  font-weight: 500;
+}
+.name input,
+.email input {
+  padding: 1rem 3rem;
+  font-size: 2rem;
+}
+.email {
+  margin-bottom: 3rem;
+}
+.submit {
+  border: none;
+  background-color: #4c6e97;
+  width: 100%;
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem 0;
+  color: white;
+  font-size: 2rem;
+  transition: all 1s ease;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: #324966;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* ------------------------------------- Footer ----------------------------- */
+footer {
+  background-color: #343c44;
+  text-align: start;
+}
+.foot {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .logo {
+  flex: 1 1 30rem;
+  padding: 1rem 0;
+}
+footer .logo h1 {
+  font-size: 3rem;
+  font-family: -webkit-pictograph;
+}
+.social-media {
+  flex: 1 1 30rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.social-media img {
+  height: 3rem;
+  width: 3rem;
+}
+.social-media img:hover {
+  cursor: pointer;
+}
+/* -------------------------------------------------------------------------- */
+
+/*************** Media query *****************/
+@media screen and (max-width: 929px) {
+  html {
+    font-size: 50%;
+  }
+  .logo,
+  .links {
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+  .logo {
+    padding: 2rem;
+  }
+  #Locations img {
+    z-index: -2;
+  }
+  #Locations .text h2 {
+    color: white;
+    background-color: rgba(19, 28, 39, 0.85);
+    padding: 2rem 1rem;
+  }
+  #Contact .box {
+    width: 100%;
+  }
+  footer .logo {
+    text-align: center;
+  }
+}
